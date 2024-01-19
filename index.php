@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Yatra Rail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0-rc.3/jquery-ui.min.js" integrity="sha256-R6eRO29lbCyPGfninb/kjIXeRjMOqY3VWPVk6gMhREk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        .formborder {
+            border-radius: 8px;
+            border: 2px solid rgb(53, 47, 47);
+            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 69, 0, 0.7);
+            /* Using rgba for orangered with 0.7 opacity */
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Additional styling for form elements within the border */
+        .formborder input,
+        .formborder select,
+        .formborder button {
+            color: black;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 3px;
+            margin: 5px 0;
+        }
+
+        body {
+            font-family: inter, sans-serif;
+
+            background-image: url('ram2.jpeg');
+            /* Specify the path to your image */
+            background-size: cover;
+            /* Ensure the background image covers the entire body */
+            background-repeat: no-repeat;
+            /* Prevent the image from repeating */
+            background-attachment: fixed;
+            /* Fixed background */
+        }
+        
+
+
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container d-flex justify-content-center align-items-center vh-80 ">
+        <section>
+            <!-- <div style="text-align: center;" class="mt-5 mb-5 col-sm-12">
+                <h3 class="mt-5">Registration form</h3>
+            </div> -->
+
+            <form enctype="multipart/form-data" method="post" action=""
+    class="formborder rounded p-4 pb-4 mb-5 mt-5 align-items-center" style="width: 100%; text-align: center;">
+                <div class="container mb-3">
+                    <h4 class=""><b>Shri Rama Kalyan at Ayodhya (Special Yatra Rail)</b></h4><br>
+
+                </div>
+                <div class="row g- align-items-center mt-2">
+                    <div class="col-auto col-3">
+                        <label for="" class="col-form-label"><b>Train No/Name:</b></label>
+                    </div>
+                    <div class="col-auto col-9" style="width: 70%;">
+                        <input type="text" id="trainNo" class="form-control" aria-describedby="" value="Bharat Gowrav" readonly>
+                    </div>
+                </div>
+                <div class="row g- align-items-center mt-3">
+                    <div class="col-auto col-3">
+                        <label for="" class="col-form-label"><b>Name:</b></label>
+                    </div>
+                    <div class="col-auto col-9" style="width: 70%;;">
+                        <input type="text" id="name" class="form-control" aria-describedby="">
+                    </div>
+                </div>
+                <div class="row g- align-items-center mt-3">
+                    <div class="col-auto col-3">
+                        <label for="" class="col-form-label"><b>Age:</b></label>
+                    </div>
+                    <div class="col-auto col-9" style="width: 70%;;">
+                        <input type="text" id="age" class="form-control" aria-describedby="">
+                    </div>
+                </div>
+                <div class="row g- align-items-center mt-3 ">
+                    <div class="col-auto col-3">
+                        <label for="" class="col-form-label"><b>Gender:</b></label>
+                    </div>
+                    <div class="col-auto col-9" style="width: 70%;;">
+                        <select class="form-select" id="gender" name="team">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row g- align-items-center mt-3">
+                    <div class="col-auto col-3">
+                        <label for="" class="col-form-label"><b>Phone Number:</b></label>
+                    </div>
+                    <div class="col-auto col-9" style="width: 70%;;">
+                        <input type="text" id="phoneNumber" class="form-control" aria-describedby="">
+                    </div>
+                </div>
+
+                <div class="row g- align-items-center mt-3">
+                    <div class="col-auto col-3">
+                        <label for="" class="col-form-label"><b>Boarding:</b></label>
+                    </div>
+                    <div class="col-auto col-9" style="width: 70%;;">
+                        <input type="text" id="boarding" class="form-control" aria-describedby="">
+                    </div>
+                </div>
+                <div class="row g- align-items-center mt-3 ">
+                    <div class="col-auto col-3">
+                        <label for="" class="col-form-label"><b>Class:</b></label>
+                    </div>
+                    <div class="col-auto col-9" style="width: 70%;;">
+                        <input type="text" id="class" class="form-control" aria-describedby="">
+                    </div>
+                </div>
+
+                <div class="row g- align-items-center mt-3">
+                    <div class="col-auto col-3">
+                        <label for="" class="col-form-label"><b>Coach:</b></label>
+                    </div>
+                    <div class="col-auto col-9" style="width: 70%;;">
+                        <input type="text" id="coach" class="form-control" aria-describedby="">
+                    </div>
+                </div>
+                <div class="row g- align-items-center mt-3 mb-3">
+                    <div class="col-auto col-3">
+                        <label for="" class="col-form-label"><b>Seat:</b></label>
+                    </div>
+                    <div class="col-auto col-9" style="width: 70%;;">
+                        <input type="text" id="seat" class="form-control" aria-describedby="">
+                    </div>
+                </div>
+                
+
+                <button type="button" class="btn btn-success" onclick="generateTicket()">Generate Ticket</button>
+            </form>
+            <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ticketModalLabel">Generated Ticket</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="outputData"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function generateTicket() {
+            // Get form data
+            var formData = {
+                'Train No/Name': document.getElementById('trainNo').value,
+                'Name': document.getElementById('name').value,
+                'Age': document.getElementById('age').value,
+                'Gender': document.getElementById('gender').value,
+                'Phone Number': document.getElementById('phoneNumber').value,
+                'Boarding': document.getElementById('boarding').value,
+                'Class': document.getElementById('class').value,
+                'Coach': document.getElementById('coach').value,
+                'Seat': document.getElementById('seat').value
+            };
+
+            // Display form data in the output area
+            var outputData = document.getElementById('outputData');
+            outputData.innerHTML = '<pre>' + JSON.stringify(formData, null, 2) + '</pre>';
+
+            // Show the modal
+            var myModal = new bootstrap.Modal(document.getElementById('ticketModal'));
+            myModal.show();
+        }
+    </script>
+
+    <!-- Include Bootstrap JS at the end of the body to ensure proper functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
